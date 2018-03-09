@@ -13,8 +13,10 @@ public class SimpleMessageReceiver implements MessageReceiver {
     public void receive(Message message) {
         if (message instanceof NumberMessage) {
             writer.write(String.format("I receive an Integer Message with number %s", ((NumberMessage) message).getNumber()));
-        } else {
+        } else if (message instanceof TextMessage) {
             writer.write(String.format("I receive a Text Message with saying '%s'", ((TextMessage) message).getText()));
+        } else {
+            writer.write("Unknown Message received");
         }
     }
 }

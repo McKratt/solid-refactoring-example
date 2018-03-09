@@ -41,4 +41,12 @@ public class SimpleMessageReceiverTest {
 
     }
 
+    @Test
+    public void receive_should_handle_unknown_message() {
+        //Given
+        //When
+        receiver.receive(new UnknownMessage());
+        //Then
+        verify(writer).write("Unknown Message received");
+    }
 }
