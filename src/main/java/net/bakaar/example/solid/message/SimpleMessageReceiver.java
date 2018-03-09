@@ -5,7 +5,7 @@ import java.io.StringWriter;
 public class SimpleMessageReceiver implements MessageReceiver {
     private final StringWriter writer;
 
-    public SimpleMessageReceiver(StringWriter writer) {
+    SimpleMessageReceiver(StringWriter writer) {
         this.writer = writer;
     }
 

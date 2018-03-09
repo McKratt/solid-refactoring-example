@@ -1,9 +1,9 @@
 package net.bakaar.example.solid.message;
 
-public class NumberMessage implements Message {
-     private int number;
+class NumberMessage implements Message {
+    private int number;
 
-    public NumberMessage(int number) {
+    NumberMessage(int number) {
         this.number = number;
     }
 

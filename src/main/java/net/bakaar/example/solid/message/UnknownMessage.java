@@ -1,4 +1,4 @@
 package net.bakaar.example.solid.message;
 
-public class UnknownMessage implements Message {
+class UnknownMessage implements Message {
 }

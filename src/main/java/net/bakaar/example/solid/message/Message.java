@@ -1,4 +1,4 @@
 package net.bakaar.example.solid.message;
 
-interface Message {
+public interface Message {
 }
