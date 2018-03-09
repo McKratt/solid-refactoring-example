@@ -6,4 +6,8 @@ public class NumberMessage implements Message {
     public NumberMessage(int number) {
         this.number = number;
     }
+
+    public int getNumber() {
+        return number;
+    }
 }

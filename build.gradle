@@ -14,4 +14,5 @@ dependencies {
     testCompile group: 'io.cucumber', name: 'cucumber-java', version: '2.3.1'
     testCompile 'io.cucumber:cucumber-junit:2.3.1'
     testCompile 'org.assertj:assertj-core:3.9.0'
+    testCompile "org.mockito:mockito-core:2.+"
 }
