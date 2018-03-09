@@ -11,6 +11,10 @@ public class SimpleMessageReceiver implements MessageReceiver {
 
     @Override
     public void receive(Message message) {
-        writer.write(String.format("I receive an Integer Message with number %s", ((NumberMessage) message).getNumber()));
+        if (message instanceof NumberMessage) {
+            writer.write(String.format("I receive an Integer Message with number %s", ((NumberMessage) message).getNumber()));
+        } else {
+            writer.write(String.format("I receive a Text Message with saying '%s'", ((TextMessage) message).getText()));
+        }
     }
 }

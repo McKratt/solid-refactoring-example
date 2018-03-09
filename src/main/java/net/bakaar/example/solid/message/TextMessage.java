@@ -6,4 +6,8 @@ public class TextMessage implements Message {
     public TextMessage(String text) {
         this.text =  text;
     }
+
+    public String getText() {
+        return text;
+    }
 }

@@ -20,11 +20,25 @@ public class SimpleMessageReceiverTest {
     private SimpleMessageReceiver receiver;
 
     @Test
-    public void receive_should_treat_number_message() {
+    public void receive_should_handle_number_message() {
         //Given
+        int number = 5;
         //When
-        receiver.receive(new NumberMessage(5));
+        receiver.receive(new NumberMessage(number));
         //Then
-        verify(writer).write("I receive an Integer Message with number 5");
+        verify(writer).write("I receive an Integer Message with number " + number);
     }
+
+    @Test
+    public void receive_should_handle_text_message() {
+        //Given
+        String text = "My Text";
+        //When
+        receiver.receive(new TextMessage(text));
+        //Then
+        verify(writer).write("I receive a Text Message with saying '" + text + "'");
+
+
+    }
+
 }

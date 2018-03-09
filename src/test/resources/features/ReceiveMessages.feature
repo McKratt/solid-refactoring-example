@@ -8,7 +8,7 @@ Feature: Receive Messaages from our Broker
 
   Scenario: Receiving Text Message
     When we receive an Text Message with "My String"
-    Then the message "I receive an String Message with saying 'My String'" should be printed
+    Then the message "I receive a Text Message with saying 'My String'" should be printed
 
   Scenario: Receiving Unknown Message
     When we receive an Unknown Message
