@@ -2,7 +2,7 @@ package net.bakaar.example.solid.message;
 
 import java.io.StringWriter;
 
-// ISP ok, LSP ok
+// LSP ok
 public class SimpleMessageReceiver implements MessageReceiver {
 
     // FIXME This class depend on all the Message's implementations DIP
@@ -30,6 +30,7 @@ public class SimpleMessageReceiver implements MessageReceiver {
         }
     }
 
+    //FIXME This method is not used I shouldn't have to implement this method ISP
     @Override
     public void print(Message message) {
         //Nothing to do
