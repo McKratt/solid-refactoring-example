@@ -29,4 +29,9 @@ public class SimpleMessageReceiver implements MessageReceiver {
             writer.write("Unknown Message received");
         }
     }
+
+    @Override
+    public void print(Message message) {
+        //Nothing to do
+    }
 }
