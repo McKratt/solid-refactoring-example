@@ -1,6 +1,6 @@
 Feature: Receive Messaages from our Broker
 
-  We can receive different type of messages on the same endoint. Each message must be treated independently.
+  We can receive different types of messages on the same endoint. Each message must be treated independently.
 
   Scenario: Receiving Number Message
     When we receive an Number Message with 4
